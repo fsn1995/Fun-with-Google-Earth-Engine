@@ -1,5 +1,5 @@
 # geeFSN
- Google Earth Engine self-learning. Resources for myself.
+ Google Earth Engine self-learning. Resources for myself. Copy the script and run in the GEE code editor: https://code.earthengine.google.com/
 ## 1. [Noah.js](https://github.com/fsn1995/geeFSN/blob/master/Noah.js)
 This script computes, displays and exports the mean annual temperature, mean annual precipitation. Climate data is NOAH Global Land Assimulation System data. 
 ## 2. [grace.js](https://github.com/fsn1995/geeFSN/blob/master/grace.js)
