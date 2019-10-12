@@ -31,5 +31,62 @@ dataGRACE = dataGRACE.map(function(image) {
 // print(dataGRACE);
 var meanGRACE = dataGRACE.select('cmlwe_mean').mean();
 print(meanGRACE);
-Map.addLayer(meanGRACE, {min: -5, max: 5, 
-    palette: ['red', 'green', 'blue']},'20 yr mean GRACE');
+var visPara = {min: -5, max: 5, palette: ['red', 'green', 'blue']}
+Map.addLayer(meanGRACE, visPara,'20 yr mean GRACE');
+
+// set position of panel
+var legend = ui.Panel({
+style: {
+position: 'bottom-left',
+padding: '8px 15px'
+}
+});
+ 
+// Create legend title
+var legendTitle = ui.Label({
+value: 'cm w.e.',
+style: {
+fontWeight: 'bold',
+fontSize: '18px',
+margin: '0 0 4px 0',
+padding: '0'
+}
+});
+ 
+// Add the title to the panel
+legend.add(legendTitle);
+ 
+// create the legend image
+var lon = ee.Image.pixelLonLat().select('latitude');
+var gradient = lon.multiply((visPara.max-visPara.min)/100.0).add(visPara.min);
+var legendImage = gradient.visualize(visPara);
+ 
+// create text on top of legend
+var panel = ui.Panel({
+widgets: [
+ui.Label(visPara['max'])
+],
+});
+ 
+legend.add(panel);
+ 
+// create thumbnail from the image
+var thumbnail = ui.Thumbnail({
+image: legendImage,
+params: {bbox:'0,0,10,100', dimensions:'10x200'},
+style: {padding: '1px', position: 'bottom-center'}
+});
+ 
+// add the thumbnail to the legend
+legend.add(thumbnail);
+ 
+// create text on top of legend
+var panel = ui.Panel({
+widgets: [
+ui.Label(visPara['min'])
+],
+});
+ 
+legend.add(panel);
+ 
+Map.add(legend);
