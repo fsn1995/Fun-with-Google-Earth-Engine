@@ -114,3 +114,20 @@ for (var i = 0; i < 4; i++) {
   
 // add legend to map (alternatively you can also print the legend to the console)
 Map.add(legend);
+
+// convert the original data to rgb three bands and export as a video
+var videoParams = {bands: ['waterClass'], min: 0, max: 3, palette: visPalette};
+var addRGB = function(image) {
+  var rgb = image.visualize(videoParams);
+  return image.addBands(rgb);
+};
+
+var waterClassRGB = dataset.map(addRGB);
+print(waterClassRGB);
+Export.video.toDrive({
+  collection: waterClassRGB.select(['vis-red', 'vis-green', 'vis-blue']),
+  description:'waterAnnualVideo',
+  dimensions: 720,
+  framesPerSecond: 1,
+  region: roi
+});
