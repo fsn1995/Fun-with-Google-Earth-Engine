@@ -10,17 +10,22 @@ https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V021_NOAH
 ## 2. [grace](https://github.com/fsn1995/geeFSN/blob/master/grace.js)
 This script displays the long term average GRACE (the Gravity Recovery and Climate Experiment) data.\
 ![screenshot](pic/grace.png)  
-## 3. EC JRC/Google Global Product 
-Explore the global surface product provided by EC JRC/Google. This part is finished while I am working as the RS and GIS associate at the ICRC.
-### 3.1 [GlobalWater](https://github.com/fsn1995/geeFSN/blob/master/GlobalWater.js)
+## 3. Visualization of Globa Product
+This part aims to visualize some of the global product in the GEE's dataset. Some of the scripts were explored while I am working as the RS and GIS associate at the ICRC.
+## 3.1 EC JRC/Google Global Product 
+Explore the global surface product provided by EC JRC/Google. 
+### 3.1.1 [GlobalWater](https://github.com/fsn1995/geeFSN/blob/master/GlobalWater.js)
 It would display the global surface water dynamics in your area of interest. 
 ![screenshot](pic/globalwater.png)  
-### 3.2 [GlobalWaterAnnual](https://github.com/fsn1995/geeFSN/blob/master/GlobalWaterAnnual.js)
+### 3.1.2 [GlobalWaterAnnual](https://github.com/fsn1995/geeFSN/blob/master/GlobalWaterAnnual.js)
 It creates a dateslider to check the annual water classification. 
 ![screenshot](pic/annualwater.png)  
-### 3.3 [GlobalUrban](https://github.com/fsn1995/geeFSN/blob/master/GlobalUrban.js)
+### 3.1.3 [GlobalUrban](https://github.com/fsn1995/geeFSN/blob/master/GlobalUrban.js)
 This script utizes the GHSL: Global Human Settlement Layers, Built-Up Grid 1975-1990-2000-2015 (P2016) data.
 ![screenshot](pic/globalurban.png)  
+### 3.2 [Fire Viewer](https://github.com/fsn1995/geeFSN/blob/master/FireViewer.js)
+It displays the maximum extent of fire events during the study period at specified country. This was used to assist ICRC GIS officers from Lebanon to locate wildfires. The polygons of fire events can be exported via google drive.\
+The data is provided by NASA / LANCE / EOSDIS (FIRMS: Fire Information for Resource Management System)
 ## 4. [koppen climate classification](https://github.com/fsn1995/geeFSN/blob/master/koppen.js)
 This script displays The Köppen-Geiger climate map with a spatial resolution of 5 arc minutes for the period of 1986-2010. The legend will be displayed in the console.\
 http://koeppen-geiger.vu-wien.ac.at/ \
