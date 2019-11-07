@@ -8,7 +8,7 @@ The temporal resolution is 3 hours (8 bands per day). Note: the unit of precipit
 https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V20_NOAH_G025_T3H \
 https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V021_NOAH_G025_T3H \
 ![screenshot](pic/MAP.jpg)
-![screenshot](pic/MAT/jpg)    
+![screenshot](pic/MAT.jpg)    
 ## 2. [GRACE](https://github.com/fsn1995/geeFSN/blob/master/grace.js)
 This script displays the long term average GRACE (the Gravity Recovery and Climate Experiment) data.\
 ![screenshot](pic/grace.png)  
