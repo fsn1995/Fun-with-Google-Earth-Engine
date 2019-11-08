@@ -1,7 +1,8 @@
-# geeFSN
- Google Earth Engine self-learning. Resources for myself.\
- Start from the official guide and the reference: https://developers.google.com/earth-engine/#api \
- Copy the script and run in the GEE code editor: https://code.earthengine.google.com/
+# Fun with GEE
+Google Earth Engine self-learning. Resources for myself.\
+Start from the official guide and the reference: https://developers.google.com/earth-engine/#api \
+Copy the script and run in the GEE code editor: https://code.earthengine.google.com/ \
+A quick self-training document can be found here: [Google Earth Engine Training for GIS officers](https://github.com/fsn1995/GEE-Training-GIS-officers)
 ## 1. [Mean Annual Temperature/PrecipitationNoah](https://github.com/fsn1995/geeFSN/blob/master/Noah.js)
 This script computes, displays and exports the mean annual temperature, mean annual precipitation. The selected dateset is NOAH Global Land Assimulation System data.\
 The temporal resolution is 3 hours (8 bands per day). Note: the unit of precipitation rate (kg/m^2/s) equals mm/s and is converted by the script. More about the data can be found at: \
@@ -33,7 +34,7 @@ This script displays The Köppen-Geiger climate map with a spatial resolution of
 http://koeppen-geiger.vu-wien.ac.at/ \
 Link to the shared data:\
 https://code.earthengine.google.com/?asset=users/fsn1995/Global_19862010_KG_5m \
-![screenshot](pic/koppen.png)  \
+![screenshot](pic/koppen.png)  
 ## 5. [Trend Analysis](https://github.com/fsn1995/geeFSN/blob/master/mannKendall.js)
 This script performs Mann-kendall's test to the MODIS NDVI product. The result can be used to indicate the long-term trend of global vegetation (green) trend.\
 ![screenshot](pic/mannkendal.jpg)
