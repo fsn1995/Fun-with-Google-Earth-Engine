@@ -2,7 +2,7 @@
 Google Earth Engine self-learning. Resources for myself.\
 Start from the official guide and the reference: https://developers.google.com/earth-engine/#api \
 Copy the script and run in the GEE code editor: https://code.earthengine.google.com/ \
-A quick self-training document can be found here: [Google Earth Engine Training for GIS officers](https://github.com/fsn1995/GEE-Training-GIS-officers)
+A quick self-training document can be found here: [Goolge Earth Engine self-training](https://github.com/fsn1995/Goolgle-Earth-Engine-self-traning)
 ## 1. [Mean Annual Temperature/PrecipitationNoah](https://github.com/fsn1995/geeFSN/blob/master/Noah.js)
 This script computes, displays and exports the mean annual temperature, mean annual precipitation. The selected dateset is NOAH Global Land Assimulation System data.\
 The temporal resolution is 3 hours (8 bands per day). Note: the unit of precipitation rate (kg/m^2/s) equals mm/s and is converted by the script. More about the data can be found at: \
