@@ -3,7 +3,7 @@ Google Earth Engine self-learning. Resources for myself.\
 Start from the official guide and the reference: https://developers.google.com/earth-engine/#api \
 Copy the script and run in the GEE code editor: https://code.earthengine.google.com/ \
 A quick self-training document can be found here: [Goolge Earth Engine self-training](https://github.com/fsn1995/Goolgle-Earth-Engine-self-traning)
-## 1. [Mean Annual Temperature/PrecipitationNoah](https://github.com/fsn1995/geeFSN/blob/master/Noah.js)
+## 1. [Mean Annual Temperature/Precipitation - Noah](https://github.com/fsn1995/geeFSN/blob/master/Noah.js)
 This script computes, displays and exports the mean annual temperature, mean annual precipitation. The selected dateset is NOAH Global Land Assimulation System data.\
 The temporal resolution is 3 hours (8 bands per day). Note: the unit of precipitation rate (kg/m^2/s) equals mm/s and is converted by the script. More about the data can be found at: \
 https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V20_NOAH_G025_T3H \
@@ -14,7 +14,7 @@ https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V021_NOAH
 This script displays the long term average GRACE (the Gravity Recovery and Climate Experiment) data.\
 ![screenshot](pic/grace.png)  
 ## 3. Visualization of Globa Product
-This part aims to visualize some of the global product in the GEE's dataset. Some of the scripts were explored while I am working as the RS and GIS associate at the ICRC.
+This part aims to visualize some of the global product in the GEE's dataset. 
 ## 3.1 EC JRC/Google Global Product 
 Explore the global surface product provided by EC JRC/Google. 
 ### 3.1.1 [Global Water](https://github.com/fsn1995/geeFSN/blob/master/GlobalWater.js)
