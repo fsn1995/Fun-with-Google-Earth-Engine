@@ -53,6 +53,21 @@ var MAT = tempAnnual.mean().subtract(273.15);
 print(MAT, 'mean annual temperature');
 Map.addLayer(MAT, {min: -10, max: 30, palette: ['blue', 'green', 'red']}, 'mean annual temperature');
 
+// mean monthly temperature
+var tempMonthly = ee.ImageCollection.fromImages(
+  years.map(function (y) {
+    return months.map(function (m) {
+      var meanT =  gldasTemp.filter(ee.Filter.calendarRange(y, y, 'year'))
+                            .filter(ee.Filter.calendarRange(m, m, 'month'))
+                            .mean()
+                            .rename('MMT');
+      return meanT.set('year', y)
+                  .set('month', m)
+                  .set('system:time_start', ee.Date.fromYMD(y, m, 1));                      
+    });
+  }).flatten()
+);
+
 // export
 Export.image.toAsset({
     image: MAT,
@@ -96,6 +111,23 @@ var MAPr = precAnnual.mean();
 Map.addLayer(MAPr, {min: 0, max: 2000, palette: ['red', 'green', 'blue']}, 'mean annual precipitation');
 print(MAPr, 'mean annual precipitation');
 
+// mean monthly precipitation
+var precMonthly = ee.ImageCollection.fromImages(
+  years.map(function (y) {
+    return months.map(function (m) {
+      var meanP =  gldasPrec.select('Rainf_f_tavg_1')
+                            .filter(ee.Filter.calendarRange(y, y, 'year'))
+                            .filter(ee.Filter.calendarRange(m, m, 'month'))
+                            .sum()
+                            .rename('MMP');
+      return meanP.set('year', y)
+                  .set('month', m)
+                  .set('system:time_start', ee.Date.fromYMD(y, m, 1));                      
+    });
+  }).flatten()
+);
+
+
 // export
 Export.image.toAsset({
   image: MAPr,
@@ -104,6 +136,7 @@ Export.image.toAsset({
   scale: 10000,
   // region: roi
 });
+
 Export.image.toDrive({
 image: MAPr,
 folder: 'gee',
