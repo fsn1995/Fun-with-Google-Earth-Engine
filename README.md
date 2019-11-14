@@ -39,7 +39,7 @@ https://code.earthengine.google.com/?asset=users/fsn1995/Global_19862010_KG_5m \
 This script performs Mann-kendall's test to the MODIS NDVI product. The result can be used to indicate the long-term trend of global vegetation (green) trend.\
 ![screenshot](pic/mannkendal.jpg)
 ## 6. [Urban landcover](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/unsupervisedPlanetLab.js)
-A quick overview of the unsupervised classification with high resolution aerial photo (Planet Lab).
+A quick overview of the unsupervised classification with high resolution imagery (Planet Lab).
 ![screenshot](pic/Beirut.jpg)
 # quick link
 1) gee community: 

@@ -1,6 +1,6 @@
 /*
 This experiment applies unsupervised classification to high resolution
-aerial photo (Planet Lab) of Beirut.
+imagery (Planet Lab) of Beirut.
 Shunan Feng: fsn.1995@gmail.com
 */
 
