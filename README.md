@@ -42,9 +42,10 @@ This script performs Mann-kendall's test to the MODIS NDVI product. The result c
 A quick overview of the unsupervised classification with high resolution imagery (Planet Lab).
 ![screenshot](pic/Beirut.jpg)
 # quick link
-1) gee community: 
+1) AWESOME geetools by @author: Rodrigo E. Principe https://github.com/fitoprincipe/geetools-code-editor/wiki
+2) gee community: 
 https://github.com/gee-community/
-2) how to add a legend?
+3) how to add a legend?
 https://mygeoblog.com/2016/12/09/add-a-legend-to-to-your-gee-map/
-3) how to add a gradient legend?
+4) how to add a gradient legend?
 https://mygeoblog.com/2017/03/02/creating-a-gradient-legend/
