@@ -17,6 +17,8 @@ Shunan Feng: fsn.1995@gmail.com
 //-------------------------------------------------------------------//
 //                            preparation                            //
 //-------------------------------------------------------------------//
+var worldmap = ee.FeatureCollection('ft:1tdSwUL7MVpOauSgRzqVTOwdfy17KDbw-1d9omPw');//world vector
+var roi = worldmap.geometry().dissolve().bounds();
 
 // study time range
 var year_start = 1984; 
@@ -101,11 +103,12 @@ Export.image.toDrive({
 });
 
 // // batch export
-// batch.Download.ImageCollection.toAsset(tempMonthly.select('MMT'), 'noah', 
+// batch.Download.ImageCollection.toAsset(tempMonthly.select('MMT'), 'noah/MMT30yr', 
 //                 {name: 'MMT30yr',
-//                 //  scale: 10000, 
+//                  scale: 10000, 
 //                  region: tempMonthly.first().geometry()
 //                 });
+
 
 //-------------------------------------------------------------------//
 //                     mean annual precpitation                      //
@@ -169,8 +172,8 @@ scale: 10000,
 });
 
 // // batch export
-// batch.Download.ImageCollection.toAsset(precMonthly.select('MMP'), 'noah', 
+// batch.Download.ImageCollection.toAsset(precMonthly.select('MMP'), 'noah/MMP30yr', 
 //                 {name: 'MMP30yr',
-//                 //  scale: 10000, 
+//                  scale: 10000, 
 //                  region: precMonthly.first().geometry()
 //                 });

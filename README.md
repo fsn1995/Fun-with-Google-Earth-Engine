@@ -41,6 +41,12 @@ This script performs Mann-kendall's test to the MODIS NDVI product. The result c
 ## 6. [Urban landcover](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/unsupervisedPlanetLab.js)
 A quick overview of the unsupervised classification with high resolution imagery (Planet Lab).
 ![screenshot](pic/Beirut.jpg)
+## 7. [Flood mapping](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/MyanmarFlood.js)
+A tool to visualize flooded area and summarize the time series of area changes. A video of all the available sentinel 1 images can be exported to google drive.\
+![screenshot](pic/flood.jpg)
+# Python API
+## 1. [batch upload with command line tool](https://github.com/fsn1995/MatlabFSN/blob/master/GEEuploader.m)
+This is just a quick solution to batch upload via the command line tool. It creates a text file with the commands to upload images from google cloud storage bucket. You will need to install earthengine-api first. Ref: https://developers.google.com/earth-engine/command_line
 # quick link
 1) AWESOME geetools by @author: Rodrigo E. Principe https://github.com/fitoprincipe/geetools-code-editor/wiki
 2) gee community: 
