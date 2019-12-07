@@ -46,7 +46,7 @@ A tool to visualize flooded area and summarize the time series of area changes. 
 ![screenshot](pic/flood.jpg)
 # Python API
 ## 1. [batch upload with command line tool](https://github.com/fsn1995/MatlabFSN/blob/master/GEEuploader.m)
-This is just a quick solution to batch upload via the command line tool. It creates a text file with the commands to upload images from google cloud storage bucket. You will need to install earthengine-api first. Ref: https://developers.google.com/earth-engine/command_line
+This is just a quick solution to batch upload via the command line tool. It creates a text file with the commands to upload images from google cloud storage bucket and the other text file for defining the timestamp of each image. You will need to install earthengine-api first. Note: Just discovered that each user can only upload maximum 10k images. Ref: https://developers.google.com/earth-engine/command_line
 # quick link
 1) AWESOME geetools by @author: Rodrigo E. Principe https://github.com/fitoprincipe/geetools-code-editor/wiki
 2) gee community: 
