@@ -100,7 +100,7 @@ print(classTimeSeries);
 // export video
 var videoParams = {bands: ['VV'], min: -25, max: 5};
 var addRGB = function(image) {
-    var rgb = image.visualize(videoParams);
+    var rgb = image.randomVisualizer();
     return image.addBands(rgb);
   };
 
