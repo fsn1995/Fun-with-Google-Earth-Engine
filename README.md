@@ -1,3 +1,4 @@
+[![HitCount](http://hits.dwyl.io/fsn1995/Fun-with-Google-Earth-Engine.svg)](http://hits.dwyl.io/fsn1995/Fun-with-Google-Earth-Engine)
 # Fun with GEE
 Google Earth Engine self-learning. Resources for myself.\
 Start from the official guide and the reference: https://developers.google.com/earth-engine/#api \
