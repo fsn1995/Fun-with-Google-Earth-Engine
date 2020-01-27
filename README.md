@@ -21,9 +21,9 @@ Explore the global surface product provided by EC JRC/Google.
 ### 3.1.1 [Global Water](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/GlobalWater.js)
 It would display the global surface water dynamics in your area of interest. 
 ![screenshot](pic/globalwater.png)  
-### 3.1.2 [Global Water Annual Time Slider](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/GloablWaterAnnual.js)
-It creates a dateslider to check the annual water classification. 
-![screenshot](pic/annualwater.png)  
+### 3.1.2 Global Water Time Slider
+It creates a dateslider to check the [monthly](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/GloablWaterAnnual.js) or [annual](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/GloablWaterMonthly.js) water classification . 
+![screenshot](pic/waterDateslider.png)  
 ### 3.1.3 [Global Urban](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/GlobalUrban.js)
 This script utizes the GHSL: Global Human Settlement Layers, Built-Up Grid 1975-1990-2000-2015 (P2016) data.
 ![screenshot](pic/globalurban.png)  
