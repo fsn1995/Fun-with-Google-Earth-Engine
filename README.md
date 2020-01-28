@@ -1,6 +1,6 @@
 [![HitCount](http://hits.dwyl.io/fsn1995/Fun-with-Google-Earth-Engine.svg)](http://hits.dwyl.io/fsn1995/Fun-with-Google-Earth-Engine)
 # Fun with GEE
-Google Earth Engine self-learning. Resources for myself.\
+Google Earth Engine self-learning. Here is a collection of GEE javascript practice for myself.\
 Start from the official guide and the reference: https://developers.google.com/earth-engine/#api \
 Copy the script and run in the GEE code editor: https://code.earthengine.google.com/ \
 A quick self-training document can be found here: [Goolge Earth Engine self-training](https://github.com/fsn1995/Goolgle-Earth-Engine-self-traning)
@@ -22,7 +22,7 @@ Explore the global surface product provided by EC JRC/Google.
 It would display the global surface water dynamics in your area of interest. 
 ![screenshot](pic/globalwater.png)  
 ### 3.1.2 Global Water Time Slider
-It creates a dateslider to check the [monthly](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/GloablWaterAnnual.js) or [annual](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/GloablWaterMonthly.js) water classification . 
+It creates a dateslider to check the [monthly](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/GlobalWaterMonthly.js) or [annual](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/GloablWaterAnnual.js) water classification . 
 ![screenshot](pic/waterDateslider.png)  
 ### 3.1.3 [Global Urban](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/GlobalUrban.js)
 This script utizes the GHSL: Global Human Settlement Layers, Built-Up Grid 1975-1990-2000-2015 (P2016) data.
