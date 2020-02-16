@@ -1,14 +1,13 @@
 [![HitCount](http://hits.dwyl.io/fsn1995/Fun-with-Google-Earth-Engine.svg)](http://hits.dwyl.io/fsn1995/Fun-with-Google-Earth-Engine)
 # Fun with GEE
-Google Earth Engine self-learning. Here is a collection of GEE javascript practice for myself.\
-Start from the official guide and the reference: https://developers.google.com/earth-engine/#api \
-Copy the script and run in the GEE code editor: https://code.earthengine.google.com/ \
-A quick self-training document can be found here: [Goolge Earth Engine self-training](https://github.com/fsn1995/Goolgle-Earth-Engine-self-traning)
+Google Earth Engine self-learning. Here is a collection of GEE javascript practice for myself.
+- Start from the official guide and the reference: https://developers.google.com/earth-engine/#api 
+- Copy the script and run in the GEE code editor: https://code.earthengine.google.com/ 
 ## 1. [Mean Annual Temperature/Precipitation - Noah](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/Noah.js)
-This script computes, displays and exports the mean annual temperature, mean annual precipitation. The selected dateset is NOAH Global Land Assimulation System data.\
-The temporal resolution is 3 hours (8 bands per day). Note: the unit of precipitation rate (kg/m^2/s) equals mm/s and is converted by the script. More about the data can be found at: \
-https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V20_NOAH_G025_T3H \
-https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V021_NOAH_G025_T3H \
+This script computes, displays and exports the mean annual temperature, mean annual precipitation. The selected dateset is NOAH Global Land Assimulation System data.
+- The temporal resolution is 3 hours (8 bands per day). Note: the unit of precipitation rate (kg/m^2/s) equals mm/s and is converted by the script. More about the data can be found at: 
+- https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V20_NOAH_G025_T3H 
+- https://developers.google.com/earth-engine/datasets/catalog/NASA_GLDAS_V021_NOAH_G025_T3H 
 ![screenshot](pic/MAP.jpg)
 ![screenshot](pic/MAT.jpg)    
 ## 2. [GRACE](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/grace.js)
@@ -31,10 +30,9 @@ This script utizes the GHSL: Global Human Settlement Layers, Built-Up Grid 1975-
 It displays the maximum extent of fire events during the study period at specified country. This was used to assist ICRC GIS officers from Lebanon to locate wildfires. The polygons of fire events can be exported via google drive.\
 The data is provided by NASA / LANCE / EOSDIS (FIRMS: Fire Information for Resource Management System)
 ## 4. [koppen climate classification](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/koppen.js)
-This script displays The Köppen-Geiger climate map with a spatial resolution of 5 arc minutes for the period of 1986-2010. The legend will be displayed in the console.\
-http://koeppen-geiger.vu-wien.ac.at/ \
-Link to the shared data:\
-https://code.earthengine.google.com/?asset=users/fsn1995/Global_19862010_KG_5m \
+This script displays The Köppen-Geiger climate map with a spatial resolution of 5 arc minutes for the period of 1986-2010. The legend will be displayed in the console.
+- http://koeppen-geiger.vu-wien.ac.at/ 
+- Link to the shared data: https://code.earthengine.google.com/?asset=users/fsn1995/Global_19862010_KG_5m \
 ![screenshot](pic/koppen.png)  
 ## 5. [Trend Analysis](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/mannKendall.js)
 This script performs Mann-kendall's test to the MODIS NDVI product. The result can be used to indicate the long-term trend of global vegetation (green) trend.\
@@ -47,7 +45,8 @@ A tool to visualize flooded area and summarize the time series of area changes. 
 ![screenshot](pic/flood.jpg)
 # Python API
 ## 1. [batch upload with command line tool](https://github.com/fsn1995/MatlabFSN/blob/master/GEEuploader.m)
-This is just a quick solution to batch upload via the command line tool. It creates a text file with the commands to upload images from google cloud storage bucket and the other text file for defining the timestamp of each image. You will need to install earthengine-api first. Note: Just discovered that each user can only upload maximum 10k images. Ref: https://developers.google.com/earth-engine/command_line
+This is just a quick solution to batch upload via the command line tool. It creates a text file with the commands to upload images from google cloud storage bucket and the other text file for defining the timestamp of each image. You will need to install earthengine-api first. Note: Just discovered that each user can only upload maximum 10k images. 
+Ref: https://developers.google.com/earth-engine/command_line
 # quick link
 1) AWESOME geetools by @author: Rodrigo E. Principe https://github.com/fitoprincipe/geetools-code-editor/wiki
 2) gee community: 
