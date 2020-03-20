@@ -3,6 +3,8 @@
 Google Earth Engine self-learning. Here is a collection of GEE javascript practice for myself.
 - Start from the official guide and the reference: https://developers.google.com/earth-engine/#api 
 - Copy the script and run in the GEE code editor: https://code.earthengine.google.com/ 
+
+# Exercises:
 ## 1. [Mean Annual Temperature/Precipitation - Noah](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/Noah.js)
 This script computes, displays and exports the mean annual temperature, mean annual precipitation. The selected dateset is NOAH Global Land Assimulation System data.
 - The temporal resolution is 3 hours (8 bands per day). Note: the unit of precipitation rate (kg/m^2/s) equals mm/s and is converted by the script. More about the data can be found at: 
@@ -43,6 +45,8 @@ A quick overview of the unsupervised classification with high resolution imagery
 ## 7. [Flood mapping](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/MyanmarFlood.js)
 A tool to visualize flooded area and summarize the time series of area changes. A video of all the available sentinel 1 images can be exported to google drive.\
 ![screenshot](pic/flood.jpg)
+## 8. [dem terrain calculator](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/demTerrain.js)
+A simple practice of calculating terrain products (*slope*, *aspect*, *hillshade*) and export shapefile of different slope zones. 
 # Python API
 ## 1. [batch upload with command line tool](https://github.com/fsn1995/MatlabFSN/blob/master/GEEuploader.m)
 This is just a quick solution to batch upload via the command line tool. It creates a text file with the commands to upload images from google cloud storage bucket and the other text file for defining the timestamp of each image. You will need to install earthengine-api first. Note: Just discovered that each user can only upload maximum 10k images. 
