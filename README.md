@@ -4,7 +4,29 @@ Google Earth Engine self-learning. Here is a collection of GEE javascript practi
 - Start from the official guide and the reference: https://developers.google.com/earth-engine/#api 
 - Copy the script and run in the GEE code editor: https://code.earthengine.google.com/ 
 
+
 # Exercises:
+[1. Mean Annual Temperature/Precipitation - Noah](#1-mean-annual-temperatureprecipitation---noah)
+
+[2. GRACE](#2-grace)
+
+[3. Visualization of Global Product](#3-visualization-of-global-product)
+- [3.1 EC JRC/Google Global Product](#31-ec-jrcgoogle-global-product)
+    - [3.1.1 Global Water](#311-global-water)
+    - [3.1.2 Global Water Time Slider](#312-global-water-time-slider)
+    - [3.1.3 Global Urban](#313-global-urban)
+- [3.2 Fire Viewer](#32-fire-viewer) 
+ 
+[4. koppen climate classification](#4-koppen-climate-classification)
+
+[5. Trend Analysis](#5-trend-analysis)
+
+[6. Urban landcover](#6-urban-landcover)
+
+[7. Flood mapping](#7-flood-mapping)
+
+[8. dem terrain calculator](#8-dem-terrain-calculator)
+
 ## 1. [Mean Annual Temperature/Precipitation - Noah](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/Noah.js)
 This script computes, displays and exports the mean annual temperature, mean annual precipitation. The selected dateset is NOAH Global Land Assimulation System data.
 - The temporal resolution is 3 hours (8 bands per day). Note: the unit of precipitation rate (kg/m^2/s) equals mm/s and is converted by the script. More about the data can be found at: 
@@ -15,7 +37,7 @@ This script computes, displays and exports the mean annual temperature, mean ann
 ## 2. [GRACE](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/grace.js)
 This script displays the long term average GRACE (the Gravity Recovery and Climate Experiment) data.\
 ![screenshot](pic/grace.png)  
-## 3. Visualization of Globa Product
+## 3. Visualization of Global Product
 This part aims to visualize some of the global product in the GEE's dataset. 
 ## 3.1 EC JRC/Google Global Product 
 Explore the global surface product provided by EC JRC/Google. 
