@@ -4,6 +4,24 @@ Google Earth Engine self-learning. Here is a collection of GEE javascript practi
 - Start from the official guide and the reference: https://developers.google.com/earth-engine/#api 
 - Copy the script and run in the GEE code editor: https://code.earthengine.google.com/ 
 
+# Tools
+### 1. [Image normalization](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/tools/imnormalize.js)
+Normalize images in imageCollection based on the minMax. One can access it by:
+
+```javascript
+// import function
+var imNormfunction = require('users/fsn1995/tool:imNormalization');
+// apply
+var imNormalized = imNormfunction.imNormalize(ImageCollection);
+```
+### 2. [addPCA](https://github.com/fsn1995/Fun-with-Google-Earth-Engine/blob/master/tools/addPCA.js)
+A temporary function to apply PCA to images in imageCollection. It only returns pc1-pc3 for now and will be updated later.
+```javascript
+// import function
+var imPCAfunction = require('users/fsn1995/tool:imPCA');
+// apply PCA, bands are the selected bands to apply PCA
+var imPCA = imPCAfunction.imPCA(ImageCollection,bands);
+```
 
 # Exercises:
 [1. Mean Annual Temperature/Precipitation - Noah](#1-mean-annual-temperatureprecipitation---noah)
